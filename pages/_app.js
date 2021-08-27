@@ -14,7 +14,11 @@ function MyApp({ Component, pageProps }) {
       case "/":
         return (
           <div className={styles.header}>
-            <div></div>
+            <Link href="/">
+              <a className={styles.closeButton}>
+                <Image src="/../public/left.png" width={20} height={20} />
+              </a>
+            </Link>
             <div className={styles.logo}>
               <Image src={logo} />
             </div>
@@ -25,7 +29,9 @@ function MyApp({ Component, pageProps }) {
         return (
           <div className={styles.header}>
             <Link href="/">
-              <a className={styles.closeButton}>{"<"}</a>
+              <a className={styles.closeButton}>
+                <Image src="/../public/left.png" width={20} height={20} />
+              </a>
             </Link>
             <div className={styles.logo}>
               <Image src={logo} />

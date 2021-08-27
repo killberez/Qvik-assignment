@@ -1,0 +1,65 @@
+@font-face {
+  font-family: nimbus;
+  src: url("./fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf");
+}
+
+.categoryHeader {
+  display: grid;
+  position: relative;
+  height: 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". header ."
+    ". button ."
+    ". counter .";
+}
+
+.categoryName,
+.followButton,
+.followersCounter {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}
+
+.categoryName {
+  grid-area: header;
+  font-family: nimbus;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.followButton {
+  margin-top: 0px;
+  grid-area: button;
+  height: 35px;
+  width: 90px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 1.5px solid rgb(230, 82, 182);
+  background-color: rgb(230, 82, 182);
+}
+
+.followersCounter {
+  grid-area: counter;
+  font-family: nimbus;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.topicsDiv {
+  background-color: rgb(255, 255, 255);
+}
+
+.topic {
+  font-family: nimbus;
+  font-weight: bolder;
+  font-size: 20px;
+  height: auto;
+  border-top: 1px solid black;
+}

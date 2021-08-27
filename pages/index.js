@@ -69,7 +69,12 @@ export default function Home() {
         {categories.map((categorie) => {
           return (
             <div className={styles.imgDiv}>
-              <Link href={categorie.slug}>
+              <Link
+                href={{
+                  pathname: categorie.slug,
+                  // query: { path: categorie.title },
+                }}
+              >
                 <a className={styles.gridImg}>
                   <Image
                     layout="responsive"
