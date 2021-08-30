@@ -1,22 +1,84 @@
 {
   "categories": [
-    { "id": 1, "slug": "/fashion", "title": "Fashion" },
-    { "id": 2, "slug": "/science", "title": "Science" },
-    { "id": 7, "slug": "/auto", "title": "Auto" },
-    { "id": 3, "slug": "/technology", "title": "Technology" },
-    { "id": 4, "slug": "/entertainment", "title": "Entertainment" },
-    { "id": 6, "slug": "/environment", "title": "Environment" },
-    { "id": 5, "slug": "/finances", "title": "Finances" },
-    { "id": 6, "slug": "/travel", "title": "Travel" }
+    {
+      "id": 1,
+      "slug": "/fashion",
+      "title": "Fashion"
+    },
+    {
+      "id": 2,
+      "slug": "/science",
+      "title": "Science"
+    },
+    {
+      "id": 7,
+      "slug": "/auto",
+      "title": "Auto"
+    },
+    {
+      "id": 3,
+      "slug": "/technology",
+      "title": "Technology"
+    },
+    {
+      "id": 4,
+      "slug": "/entertainment",
+      "title": "Entertainment"
+    },
+    {
+      "id": 6,
+      "slug": "/environment",
+      "title": "Environment"
+    },
+    {
+      "id": 5,
+      "slug": "/finances",
+      "title": "Finances"
+    },
+    {
+      "id": 6,
+      "slug": "/travel",
+      "title": "Travel"
+    }
   ],
-  "Fashion": [
-    { "id": 1, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 2, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 3, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 4, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 5, "title": "title", "source": "CNN", "date": "date", "text": "" }
+  "fashion": [
+    {
+      "id": 1,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 4,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 5,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    }
   ],
-  "Science": [
+  "science": [
     {
       "id": 1,
       "slug": "/arctic",
@@ -59,46 +121,228 @@
     }
   ],
   "Technology": [
-    { "id": 1, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 2, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 3, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 4, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 5, "title": "title", "source": "CNN", "date": "date", "text": "" }
+    {
+      "id": 1,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 4,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 5,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    }
   ],
   "Entertainment": [
-    { "id": 1, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 2, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 3, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 4, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 5, "title": "title", "source": "CNN", "date": "date", "text": "" }
+    {
+      "id": 1,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 4,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 5,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    }
   ],
   "Finances": [
-    { "id": 1, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 2, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 3, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 4, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 5, "title": "title", "source": "CNN", "date": "date", "text": "" }
+    {
+      "id": 1,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 4,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 5,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    }
   ],
   "Travel": [
-    { "id": 1, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 2, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 3, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 4, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 5, "title": "title", "source": "CNN", "date": "date", "text": "" }
+    {
+      "id": 1,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 4,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 5,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    }
   ],
   "Auto": [
-    { "id": 1, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 2, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 3, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 4, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 5, "title": "title", "source": "CNN", "date": "date", "text": "" }
+    {
+      "id": 1,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 4,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 5,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    }
   ],
   "Environment": [
-    { "id": 1, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 2, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 3, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 4, "title": "title", "source": "CNN", "date": "date", "text": "" },
-    { "id": 5, "title": "title", "source": "CNN", "date": "date", "text": "" }
+    {
+      "id": 1,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 4,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    },
+    {
+      "id": 5,
+      "title": "title",
+      "source": "CNN",
+      "date": "date",
+      "text": ""
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }

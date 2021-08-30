@@ -1,0 +1,50 @@
+@font-face {
+    font-family: NeueRegular;
+    src: url("./fonts/HelveticaNeueRegular.ttf");
+  }
+  
+  @font-face{
+    font-family: NeueBold;
+    src: url("./fonts/HelveticaNeueBold.ttf");
+  }
+.topicText {
+    background-color: white;
+    padding: 20px;
+}
+
+.topicHeader {
+    position: relative;
+    height: 300px;
+}
+
+.headerName {
+    position: absolute;
+    font-family: NeueBold;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20pt;
+    margin-top: 230px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.textHeader {
+    color: rgb(29, 29, 38);
+    font-family: NeueRegular;
+    font-size: 10pt;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.textHeaderCategory {
+    font-family: NeueRegular;
+    font-size: 10pt;
+    text-transform: uppercase;
+    margin-top: 6px;
+    height: 25px;
+    border-bottom: 2px solid rgb(175, 175, 175);
+}
+

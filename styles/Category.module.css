@@ -1,6 +1,11 @@
 @font-face {
-  font-family: nimbus;
-  src: url("./fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf");
+  font-family: NeueRegular;
+  src: url("./fonts/HelveticaNeueRegular.ttf");
+}
+
+@font-face{
+  font-family: NeueBold;
+  src: url("./fonts/HelveticaNeueBold.ttf");
 }
 
 .categoryHeader {
@@ -25,29 +30,33 @@
 
 .categoryName {
   grid-area: header;
-  font-family: nimbus;
+  font-family: NeueBold;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 20pt;
   margin-top: 30px;
   margin-bottom: 0px;
+  text-align: center;
+  width: 300px;
 }
 
 .followButton {
+  font-family: NeueRegular;
   margin-top: 0px;
   grid-area: button;
   height: 35px;
   width: 90px;
   color: rgb(255, 255, 255);
   border-radius: 20px;
-  border: 1.5px solid rgb(230, 82, 182);
-  background-color: rgb(230, 82, 182);
+  border: 1.5px solid rgb(230, 82, 138);
+  background-color: rgb(230, 82, 138);
+  font-size: 12pt;
 }
 
 .followersCounter {
   grid-area: counter;
-  font-family: nimbus;
+  font-family: NeueRegular;
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
@@ -57,9 +66,42 @@
 }
 
 .topic {
-  font-family: nimbus;
   font-weight: bolder;
+  padding: 20px;
   font-size: 20px;
   height: auto;
-  border-top: 1px solid black;
+  border-top: 2px solid rgb(228, 228, 228);
+}
+
+.topicTitle {
+  font-family: NeueBold;
+  font-weight: bold;
+  color: rgb(29, 29, 38);
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+
+.sourceDate {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.source{
+  font-family: NeueRegular;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 10pt;
+  color: rgb(29, 29, 38);
+  width: 70px;
+}
+
+.date{
+  font-family: NeueRegular;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 10pt;
+  width: 100px;
+  color: rgb(29, 29, 38);
 }
