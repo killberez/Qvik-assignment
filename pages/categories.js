@@ -72,7 +72,7 @@ export default function Home() {
       <div className={styles.grid}>
         {categories.map((category) => {
           return (
-            <div className={styles.imgDiv}>
+            <div key={category.slug} className={styles.imgDiv}>
               <Link
                 href={category.slug}
               >

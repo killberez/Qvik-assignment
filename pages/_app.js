@@ -6,14 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const StageContext = React.createContext(0);
+export const StageContext = React.createContext({ stage: 0, header: "" });
 
 function MyApp({ Component, pageProps }) {
-  const [context, setContext] = React.useState(0);
+  const [context, setContext] = React.useState({ stage: 0, header: "" });
 
   function Header() {
-    const [stage] = React.useContext(StageContext);
-    switch (stage) {
+    const [state] = React.useContext(StageContext);
+    switch (state.stage) {
       case 1:
         return (
           <div className={styles.header}>
@@ -44,8 +44,7 @@ function MyApp({ Component, pageProps }) {
               </a>
             </Link>
             <div className={styles.logo}>
-              {/* <Image src={logo} /> */}
-
+              {state.header}
             </div>
           </div>
         );
