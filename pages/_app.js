@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
                 <Image src={Close} />
               </a>
             </Link>
-            <div className={styles.logo}>
+            <div className={styles.pageHeader}>
               {state.header}
             </div>
           </div>
