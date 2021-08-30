@@ -74,9 +74,7 @@ export default function Home() {
           return (
             <div className={styles.imgDiv}>
               <Link
-                href={{
-                  pathname: category.slug,
-                }}
+                href={category.slug}
               >
                 <a className={styles.gridImg}>
                   <Image

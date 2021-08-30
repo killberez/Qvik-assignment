@@ -1,6 +1,11 @@
 @font-face {
-  font-family: nimbus;
-  src: url("./fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf");
+  font-family: NeueRegular;
+  src: url("./fonts/HelveticaNeueRegular.ttf");
+}
+
+@font-face{
+  font-family: NeueBold;
+  src: url("./fonts/HelveticaNeueBold.ttf");
 }
 
 .header {
@@ -8,7 +13,6 @@
   height: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   background-color: rgb(161, 117, 211);
 }
 
@@ -30,7 +34,7 @@
   display: flex;
   justify-content: center;
   color: rgb(176, 176, 176);
-  font-family: nimbus;
+  font-family: NeueRegular;
   background: none;
   border: none;
 }
@@ -39,7 +43,7 @@
   height: 35px;
   width: 90px;
   color: rgb(211, 211, 211);
-  font-family: nimbus;
+  font-family: NeueRegular;
   background: none;
   border: 1.5px solid rgb(230, 82, 138);
   border-radius: 20px;
@@ -47,17 +51,15 @@
 }
 
 .logo {
+  margin-top: 30px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .closeButton {
-  /* display: block;
-  float: left;
-  position: relative;
-  left: 20px;
-  margin-top: 30px; */
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 .grid {
@@ -69,15 +71,9 @@
   position: relative;
 }
 
-.gridImg {
-  /* display: block !important;
-  width: 100% !important;
-  height: auto !important; */
-}
-
 .categoryName {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12pt;
   z-index: 1;
   bottom: 20px;
   left: 20px;

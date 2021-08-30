@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
 
   function Header() {
     const [stage] = React.useContext(StageContext);
-
     switch (stage) {
       case 1:
         return (
@@ -45,7 +44,8 @@ function MyApp({ Component, pageProps }) {
               </a>
             </Link>
             <div className={styles.logo}>
-              <Image src={logo} />
+              {/* <Image src={logo} /> */}
+
             </div>
           </div>
         );
