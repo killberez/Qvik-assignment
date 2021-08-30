@@ -42,6 +42,7 @@ export default function Category() {
         <CategoryHeader />
         <div className={styles.topicsDiv}>
           {category.map((topic) => {
+            console.log(topic);
             return (
               <Link href="/">
                 <div className={styles.topic}>
