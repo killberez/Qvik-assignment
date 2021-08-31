@@ -1,16 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
-import { StageContext } from "./_app";
 import { useStage } from "../hooks";
 
 export default function Home() {
   useStage(1);
-
   const [categories, setCategories] = useState([]);
   const [activeButton, setActiveButton] = useState("Folowing");
+
   useEffect(() => {
     axios
       .get("http://localhost:3000/categories")
@@ -73,9 +72,7 @@ export default function Home() {
         {categories.map((category) => {
           return (
             <div key={category.slug} className={styles.imgDiv}>
-              <Link
-                href={category.slug}
-              >
+              <Link href={category.slug}>
                 <a className={styles.gridImg}>
                   <Image
                     layout="responsive"

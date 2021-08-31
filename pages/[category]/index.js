@@ -12,7 +12,6 @@ export default function Category() {
   const [category, setCategory] = useState([]);
 
   useEffect(() => {
-    console.log(query.category)
     if (query.category) {
       axios
         .get(`http://localhost:3000/${query.category}`)
@@ -43,28 +42,26 @@ export default function Category() {
         <CategoryHeader />
         <div className={styles.topicsDiv}>
           {category.map((topic) => {
-            console.log(topic);
             return (
               <Link key={topic.slug} href={`/${query.category}/${topic.id}`}>
                 <div className={styles.topic}>
                   <div className={styles.topicTitle}>{topic.title}</div>
                   <div className={styles.sourceDate}>
                     <div className={styles.source}>
-                      <Image src="/icon_list_source@3x.png"
+                      <Image
+                        src="/icon_list_source@3x.png"
                         width={15}
                         height={20}
                       />
-                      <span className={styles.sourceDiv}>
-                        {topic.source}
-                      </span>
+                      <span className={styles.sourceDiv}>{topic.source}</span>
                     </div>
                     <div className={styles.date}>
-                      <Image src="/icon_list_time@2x.png"
+                      <Image
+                        src="/icon_list_time@2x.png"
                         width={20}
-                        height={20} />
-                      <span className={styles.sourceDiv}>
-                        {topic.date}
-                      </span>
+                        height={20}
+                      />
+                      <span className={styles.sourceDiv}>{topic.date}</span>
                     </div>
                   </div>
                 </div>
@@ -72,7 +69,7 @@ export default function Category() {
             );
           })}
         </div>
-      </div >
+      </div>
     );
   } else {
     return null;
