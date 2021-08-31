@@ -3,20 +3,23 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "../../styles/Topic.module.css";
 import Image from "next/image";
-import { useStage } from "../../hooks";
+import { useStage, useHeader } from "../../hooks";
 import Link from "next/link";
 
 export default function Topic() {
     useStage(3)
     const { query } = useRouter();
     const [category, setCategory] = useState([]);
+    const [, setHeader] = useHeader()
 
     useEffect(() => {
         console.log(query.category)
         if (query.category) {
+            setHeader(query.category)
             axios
                 .get(`http://localhost:3000/${query.category}`)
                 .then((response) => setCategory(response.data[query.topic - 1]))
+
         }
     }, [query.category]);
 
@@ -43,15 +46,17 @@ export default function Topic() {
                 <TopicHeader />
                 <div className={styles.topicText}>
                     <div className={styles.textHeader}>
-                        <Image src="/icon_list_source@3x.png"
-                            width={15}
-                            height={20}
-                        />
-                        <div>{category.source}</div>
-                        <Image src="/icon_list_time@2x.png"
-                            width={20}
-                            height={20} />
-                        <div>{category.date}</div>
+                        <div className={styles.topicMetadata}>
+                            <Image src="/icon_list_source@3x.png"
+                                width={15}
+                                height={20}
+                            />
+                            <span>{category.source}</span>
+                            <Image src="/icon_list_time@2x.png"
+                                width={20}
+                                height={20} />
+                            <span>{category.date}</span>
+                        </div>
                         <div className={styles.textHeaderCategory}>{query.category}</div>
                     </div>
                     <div>{category.text}</div>

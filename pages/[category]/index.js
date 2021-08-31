@@ -45,7 +45,7 @@ export default function Category() {
           {category.map((topic) => {
             console.log(topic);
             return (
-              <Link href={`/${query.category}/${topic.id}`}>
+              <Link key={topic.slug} href={`/${query.category}/${topic.id}`}>
                 <div className={styles.topic}>
                   <div className={styles.topicTitle}>{topic.title}</div>
                   <div className={styles.sourceDate}>
@@ -54,13 +54,17 @@ export default function Category() {
                         width={15}
                         height={20}
                       />
-                      {topic.source}
+                      <span className={styles.sourceDiv}>
+                        {topic.source}
+                      </span>
                     </div>
                     <div className={styles.date}>
                       <Image src="/icon_list_time@2x.png"
                         width={20}
                         height={20} />
-                      {topic.date}
+                      <span className={styles.sourceDiv}>
+                        {topic.date}
+                      </span>
                     </div>
                   </div>
                 </div>

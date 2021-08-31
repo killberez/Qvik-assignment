@@ -34,17 +34,25 @@
     font-family: NeueRegular;
     font-size: 10pt;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
 }
 
 .textHeaderCategory {
-    font-family: NeueRegular;
-    font-size: 10pt;
+    font-family: NeueBold;
+    font-size: 9pt;
     text-transform: uppercase;
-    margin-top: 6px;
-    height: 25px;
-    border-bottom: 2px solid rgb(175, 175, 175);
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.topicMetadata {
+    display: flex;
+    align-items: center;
+}
+
+.topicMetadata > span {
+    padding-left: 10px;
+    padding-right: 20px;;
 }
 

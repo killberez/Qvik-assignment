@@ -2,9 +2,18 @@ import { StageContext } from "./pages/_app";
 import { useContext, useEffect } from "react";
 
 export const useStage = (stageNumber) => {
-  const [stage, setStage] = useContext(StageContext);
+  const [state, setState] = useContext(StageContext);
+  const setStage = (stageNumber) => setState({ ...state, stage: stageNumber })
   useEffect(() => {
-    setStage(stageNumber);
+    setState({ ...state, stage: stageNumber })
   }, []);
-  return [stage, setStage];
+  return [stageNumber, setStage];
 };
+
+export const useHeader = () => {
+  const [state, setState] = useContext(StageContext);
+  const setHeader = (newHeader) => setState({ ...state, header: newHeader })
+  return [state.header, setHeader];
+};
+
+
