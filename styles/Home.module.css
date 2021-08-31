@@ -85,8 +85,9 @@
   font-family: NeueBold;
   color: white;
   font-size: 20pt;
-  margin-top: 13px;
+  margin-top: 17px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  text-transform: uppercase;
 }

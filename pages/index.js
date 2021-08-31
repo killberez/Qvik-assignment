@@ -12,7 +12,7 @@ export default function Home() {
     }, 3000);
   }, []);
   return (
-    <div>
+    <div className={styles.loadingDiv}>
       <div className={styles.logo}>
         <Image src={logo} width={200} height={230} />
         <div className={styles.lds_ring}>
